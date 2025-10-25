@@ -1,0 +1,90 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - ON
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c3
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file /home/f/esp/hello_world/sdkconfig
+-- Adding linker script /home/f/esp/esp-idf/components/riscv/ld/rom.api.ld
+-- App "hello_world" version: 1
+-- USING O3
+-- Adding linker script /home/f/esp/esp-idf/components/esp_system/ld/esp32c3/memory.ld.in
+--   -> Preprocessing .in script: /home/f/esp/esp-idf/components/esp_system/ld/esp32c3/memory.ld.in
+-- Adding linker script /home/f/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+--   -> Preprocessing .in script: /home/f/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+--   -> Applying ldgen processing: /home/f/esp/hello_world/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.bt_funcs.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_master.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_50.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_smp.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_dtm.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_test.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_scan.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3_bt_funcs.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libc.ld
+-- Adding linker script /home/f/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /home/f/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_bootloader_format esp_common esp_driver_gpio esp_hal_i2c esp_hal_mspi esp_hal_timg esp_hw_support esp_libc esp_mm esp_partition esp_pm esp_rom esp_security esp_system esp_timer esp_usb_cdc_rom_console esptool_py freertos hal heap log main mbedtls partition_table pthread riscv soc spi_flash
+-- Component paths: /home/f/esp/esp-idf/components/app_update /home/f/esp/esp-idf/components/bootloader /home/f/esp/esp-idf/components/bootloader_support /home/f/esp/esp-idf/components/cxx /home/f/esp/esp-idf/components/efuse /home/f/esp/esp-idf/components/esp_app_format /home/f/esp/esp-idf/components/esp_bootloader_format /home/f/esp/esp-idf/components/esp_common /home/f/esp/esp-idf/components/esp_driver_gpio /home/f/esp/esp-idf/components/esp_hal_i2c /home/f/esp/esp-idf/components/esp_hal_mspi /home/f/esp/esp-idf/components/esp_hal_timg /home/f/esp/esp-idf/components/esp_hw_support /home/f/esp/esp-idf/components/esp_libc /home/f/esp/esp-idf/components/esp_mm /home/f/esp/esp-idf/components/esp_partition /home/f/esp/esp-idf/components/esp_pm /home/f/esp/esp-idf/components/esp_rom /home/f/esp/esp-idf/components/esp_security /home/f/esp/esp-idf/components/esp_system /home/f/esp/esp-idf/components/esp_timer /home/f/esp/esp-idf/components/esp_usb_cdc_rom_console /home/f/esp/esp-idf/components/esptool_py /home/f/esp/esp-idf/components/freertos /home/f/esp/esp-idf/components/hal /home/f/esp/esp-idf/components/heap /home/f/esp/esp-idf/components/log /home/f/esp/hello_world/main /home/f/esp/esp-idf/components/mbedtls /home/f/esp/esp-idf/components/partition_table /home/f/esp/esp-idf/components/pthread /home/f/esp/esp-idf/components/riscv /home/f/esp/esp-idf/components/soc /home/f/esp/esp-idf/components/spi_flash
+-- Configuring done (9.7s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/f/esp/hello_world/build
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/f/esp/hello_world/build/bootloader && /home/f/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/f/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/f/esp/hello_world/build/bootloader/bootloader.bin
+Bootloader binary size 0x5250 bytes. 0x2db0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gpio_poll_regs.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable hello_world.elf
+[8/10] Generating binary image from built executable
+esptool v5.1.0
+Creating ESP32C3 image...
+Merged 1 ELF section.
+Successfully created ESP32C3 image.
+Generated /home/f/esp/hello_world/build/hello_world.bin
+[9/10] cd /home/f/esp/hello_world/build && /home/f/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/f/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/f/esp/hello_world/build/partition_table/partition-table.bin /home/f/esp/hello_world/build/hello_world.bin
+hello_world.bin binary size 0x217a0 bytes. Smallest app partition is 0x100000 bytes. 0xde860 bytes (87%) free.
+[9/10] Running utility command for flash
+esptool --chip esp32c3 -p /dev/ttyUSB0 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 2MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 hello_world.bin
+esptool v5.1.0
+Serial port /dev/ttyUSB0:
+Connecting....
+[1A[2K[1A[2KConnected to ESP32-C3 on /dev/ttyUSB0:
+Chip type:          ESP32-C3 (QFN32) (revision v0.3)
+Features:           Wi-Fi, BT 5 (LE), Single Core, 160MHz
+Crystal frequency:  40MHz
+MAC:                58:cf:79:d6:f5:c8
+
+Uploading stub flasher...
+Running stub flasher...
+[1A[2K[1A[2KStub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00010000 to 0x00031fff...
+SHA digest in image updated.
+Compressed 21072 bytes to 13312...
+[KWriting at 0x00000000 [                              ]   0.0% 0/13312 bytes... [KWriting at 0x00005250 [==============================] 100.0% 13312/13312 bytes... 
+[1A[2K[1A[2KWrote 21072 bytes (13312 compressed) at 0x00000000 in 0.7 seconds (254.6 kbit/s).
+Hash of data verified.
+Compressed 3072 bytes to 103...
+[KWriting at 0x00008000 [                              ]   0.0% 0/103 bytes... [KWriting at 0x00008c00 [==============================] 100.0% 103/103 bytes... 
+[1A[2K[1A[2KWrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (451.4 kbit/s).
+Hash of data verified.
+Compressed 137120 bytes to 75910...
+[KWriting at 0x00010000 [                              ]   0.0% 0/75910 bytes... [KWriting at 0x000191db [=====>                        ]  21.6% 16384/75910 bytes... [KWriting at 0x0001fe65 [===========>                  ]  43.2% 32768/75910 bytes... [KWriting at 0x00026db3 [==================>           ]  64.8% 49152/75910 bytes... [KWriting at 0x0002ced3 [========================>     ]  86.3% 65536/75910 bytes... [KWriting at 0x000317a0 [==============================] 100.0% 75910/75910 bytes... 
+[1A[2K[1A[2KWrote 137120 bytes (75910 compressed) at 0x00010000 in 2.3 seconds (467.7 kbit/s).
+Hash of data verified.
+
+Hard resetting via RTS pin...
